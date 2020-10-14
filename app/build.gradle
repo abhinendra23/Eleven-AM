@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.food.delivery.eleven_am"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -34,4 +34,7 @@ dependencies {
 
     //Custom Switch Button
     implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+
+    implementation 'com.github.kishandonga:custom-snackbar:1.1'
+    implementation 'com.google.android.material:material:1.1.0-alpha03'
 }

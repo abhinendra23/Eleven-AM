@@ -13,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/toolbar"
+        app:title=""
+        app:menu="@menu/toolbar_menu"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -121,7 +123,7 @@
             android:textSize="15sp"
             />
 
-        <com.suke.widget.SwitchButton
+        <androidx.appcompat.widget.SwitchCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/notification_toggle"
