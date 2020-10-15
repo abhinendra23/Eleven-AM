@@ -14,131 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/restaurant_pic"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:background="@drawable/restaurant_pic_background"-->
-<!--        android:src="@mipmap/restro_logo"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0"-->
-<!--        app:layout_constraintHorizontal_bias="0.05"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-
-<!--    </ImageView>-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/restaurant_name"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="McDonald's"-->
-<!--        android:textSize="20sp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.05"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/food_type"-->
-<!--        app:layout_constraintVertical_weight="1" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/food_type"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:text="North Indian"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.05"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/restaurant_name"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/time"-->
-<!--        app:layout_constraintVertical_weight="1" />-->
-
-
-<!--    <TextView-->
-<!--        android:id="@+id/time"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="0dp"-->
-<!--        app:layout_constraintVertical_weight="1"-->
-<!--        android:text="25 - 30 min"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.05"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/status"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/food_type" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/status"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="0dp"-->
-<!--        app:layout_constraintVertical_weight="1"-->
-<!--        android:text="CLOSED"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.05"-->
-<!--        app:layout_constraintVertical_bias="0"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/time" />-->
-
-<!--    <CheckBox-->
-<!--        android:layout_width="20dp"-->
-<!--        android:layout_height="20dp"-->
-<!--        app:layout_constraintVertical_bias="0.1"-->
-<!--        app:layout_constraintHorizontal_bias="0.90"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:button="@null"-->
-<!--        android:background="@drawable/ic_heart_shape_grey"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/restaurant_name"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-<!--    </CheckBox>-->
-
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:paddingHorizontal="10dp"-->
-<!--        android:paddingVertical="2dp"-->
-<!--        app:layout_constraintHorizontal_bias="0.9"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:background="@drawable/rating_background"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/restaurant_name"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.9">-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView3"-->
-<!--            android:layout_width="25dp"-->
-<!--            android:layout_height="25dp"-->
-<!--            android:src="@drawable/ic_baseline_star_24"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"></ImageView>-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="4.3"-->
-<!--            android:textSize="20sp"-->
-<!--            android:layout_marginStart="5dp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/imageView3"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            android:layout_marginLeft="5dp"></TextView>-->
-
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
     <androidx.cardview.widget.CardView
         android:id="@+id/restaurant_pic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
         app:layout_constraintVertical_bias="0"
+        android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +32,7 @@
             android:layout_height="200dp"
             android:scaleType="fitXY"
 
-            android:src="@mipmap/best_burger"
+            android:src="@mipmap/restropicfrench"
             />
 
 
@@ -165,6 +47,7 @@
         android:text="Chef Passine Cafe"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:fontFamily="@font/gilroy_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -191,8 +74,8 @@
         android:layout_height="wrap_content"
         android:text="4.3"
         android:textSize="15dp"
+        android:fontFamily="@font/gilroy_bold"
         app:layout_constraintHorizontal_bias="0.99"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/no_of_rating"
         app:layout_constraintStart_toStartOf="parent"
@@ -204,6 +87,8 @@
         android:layout_height="wrap_content"
         android:text="(1.5k+ review)"
         android:textSize="10dp"
+        android:fontFamily="@font/gilroy"
+        android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintBottom_toBottomOf="@+id/rating"
         app:layout_constraintEnd_toEndOf="parent"
@@ -215,7 +100,7 @@
         android:id="@+id/cusine1"
         android:layout_width="0dp"
         android:textAlignment="center"
-        android:textStyle="bold"
+        android:fontFamily="@font/gilroy_bold"
         android:gravity="center_horizontal"
         app:layout_constraintHorizontal_weight="1"
         android:layout_height="wrap_content"
@@ -243,6 +128,7 @@
         android:text="SALAD"
         android:textStyle="bold"
         android:paddingVertical="2dp"
+        android:fontFamily="@font/gilroy_bold"
         android:paddingHorizontal="10dp"
         android:layout_marginHorizontal="5dp"
         android:textColor="@color/white"
@@ -265,6 +151,7 @@
         android:layout_height="wrap_content"
         android:text="PIZZA"
         android:paddingVertical="2dp"
+        android:fontFamily="@font/gilroy_bold"
         android:paddingHorizontal="10dp"
         android:layout_marginHorizontal="5dp"
         android:textColor="@color/white"
@@ -283,6 +170,7 @@
         app:layout_constraintHorizontal_weight="1"
         android:textAlignment="center"
         android:textStyle="bold"
+        android:fontFamily="@font/gilroy_bold"
         android:gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:text="MAGGI"
@@ -304,6 +192,7 @@
         android:layout_width="0dp"
         app:layout_constraintHorizontal_weight="1"
         android:textAlignment="center"
+        android:fontFamily="@font/gilroy_bold"
         android:gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:text="BAR"
@@ -340,6 +229,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Free Delivery"
+        android:fontFamily="@font/gilroy"
+        android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintVertical_bias="0.8"
         app:layout_constraintBottom_toBottomOf="@id/imageView5"
@@ -363,7 +254,9 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/gilroy"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="10-15 mins"
         app:layout_constraintBottom_toBottomOf="@id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -376,3 +269,129 @@
 
 
 </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/restaurant_pic"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:background="@drawable/restaurant_pic_background"-->
+    <!--        android:src="@mipmap/restro_logo"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0"-->
+    <!--        app:layout_constraintHorizontal_bias="0.05"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--    </ImageView>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/restaurant_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="McDonald's"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.05"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/food_type"-->
+    <!--        app:layout_constraintVertical_weight="1" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/food_type"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:text="North Indian"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.05"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/restaurant_name"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/time"-->
+    <!--        app:layout_constraintVertical_weight="1" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/time"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        android:text="25 - 30 min"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.05"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/status"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/food_type" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/status"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        android:text="CLOSED"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.05"-->
+    <!--        app:layout_constraintVertical_bias="0"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/restaurant_pic"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/time" />-->
+
+    <!--    <CheckBox-->
+    <!--        android:layout_width="20dp"-->
+    <!--        android:layout_height="20dp"-->
+    <!--        app:layout_constraintVertical_bias="0.1"-->
+    <!--        app:layout_constraintHorizontal_bias="0.90"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:button="@null"-->
+    <!--        android:background="@drawable/ic_heart_shape_grey"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/restaurant_name"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+    <!--    </CheckBox>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingHorizontal="10dp"-->
+    <!--        android:paddingVertical="2dp"-->
+    <!--        app:layout_constraintHorizontal_bias="0.9"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:background="@drawable/rating_background"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/restaurant_name"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.9">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView3"-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:src="@drawable/ic_baseline_star_24"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"></ImageView>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="4.3"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/imageView3"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            android:layout_marginLeft="5dp"></TextView>-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->

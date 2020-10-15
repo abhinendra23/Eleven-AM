@@ -21,7 +21,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/belgrano"
+                android:fontFamily="@font/gilroy_bold"
                 android:text="What would you\nlike to eat?"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -96,7 +96,8 @@
                 android:id="@+id/suggestion_list_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintVertical_bias="0.01"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Burger Special"
+                    android:fontFamily="@font/gilroy_bold"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -120,6 +122,7 @@
                     android:layout_height="wrap_content"
                     android:text="See all"
                     android:textColor="@color/orange"
+                    android:fontFamily="@font/gilroy_bold"
                     android:textSize="15sp"
                     app:layout_constraintVertical_bias="0"
                     app:layout_constraintHorizontal_bias="0.9"
@@ -149,11 +152,14 @@
                         <include layout="@layout/special_restaurant_card"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
-                            android:layout_margin="10dp"></include>
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginHorizontal="10dp"
+                            ></include>
                         <include layout="@layout/special_restaurant_card"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
-                            android:layout_margin="10dp"></include>
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginHorizontal="10dp"></include>
 
 
                     </LinearLayout>
@@ -181,13 +187,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Popular Restaurants"
+                    android:fontFamily="@font/gilroy_bold"
                     android:textSize="20sp"
                     app:layout_constraintHorizontal_bias="0.05"
-                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:layout_marginTop="15dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"></TextView>
+                    app:layout_constraintStart_toStartOf="parent" />
 
 
                 <include
@@ -198,6 +206,7 @@
                     android:layout_marginHorizontal="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintVertical_bias="0.0"
+                    android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/heading" />
