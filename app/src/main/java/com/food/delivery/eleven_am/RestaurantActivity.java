@@ -44,14 +44,14 @@ public class RestaurantActivity extends AppCompatActivity {
                 minus.setVisibility(View.VISIBLE);
                 quantity.setText(String.valueOf(count));
                 t_price = count*price;
-                String text =String.valueOf(count) + " " + "item" + " | " + "₹" + String.valueOf(t_price);
+                String text =String.valueOf(count) + " " + "item" + "  |  " + "₹" + String.valueOf(t_price);
 
                 if(count==1) {
                     sb = Snackbar.make(v, text, Snackbar.LENGTH_INDEFINITE);
                     sb.setAction("View Cart", new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            startActivity(new Intent(RestaurantActivity.this, MainActivity.class));
+                            startActivity(new Intent(RestaurantActivity.this, CartActivity.class));
                         }
                     });
 
@@ -82,7 +82,7 @@ public class RestaurantActivity extends AppCompatActivity {
                     sb.dismiss();
                 }else{
                     quantity.setText(String.valueOf(count));
-                    String text =String.valueOf(count) + " " + "item"+ " | " + "₹" + String.valueOf(t_price);
+                    String text =String.valueOf(count) + " " + "item"+ "  |  " + "₹" + String.valueOf(t_price);
                     sb.setText(text);
 
 
