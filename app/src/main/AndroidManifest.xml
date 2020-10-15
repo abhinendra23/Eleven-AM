@@ -11,7 +11,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".PaymentActivity"></activity>
         <activity android:name=".RestaurantActivity" />
+        <activity android:name=".CartActivity"></activity>
         <activity android:name=".HomeActivity">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
