@@ -751,7 +751,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             app:cardCornerRadius="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -805,6 +804,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
                     android:id="@+id/separator"
+                    android:background="#64646464"
                     android:layout_marginHorizontal="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -819,7 +819,7 @@
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="0dp"
                     app:cardElevation="0dp"
-                    android:layout_marginTop="5dp"
+
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -881,7 +881,322 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/imageView7"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"></ImageView>
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/netbanking_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Net Banking"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/netbanking_heading"
+                    app:layout_constraintVertical_bias="0">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/sbi_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_icon_border"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="5dp"
+                                android:src="@mipmap/sbi_icon" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="SBI"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_marginLeft="15dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/hdfc_icon"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_icon_border"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@mipmap/hdfc_icon" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="HDFC"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/axis_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_icon_border"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@mipmap/axis_icon" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="AXIS"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/pnb_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_icon_border"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@mipmap/pnb_logo" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="PNB"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/yesbank_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_icon_border"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@mipmap/yes_bank_logo" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="YES"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:id="@+id/netbanking_separator"
+                    android:background="#64646464"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                    app:layout_constraintVertical_bias="0.00"
+                    >
+
+                </View>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/netbanking_separator"
+                    app:layout_constraintVertical_bias="0.00">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="18dp">
+
+                        <TextView
+                            android:id="@+id/more_banks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:text="MORE BANKS"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:id="@+id/forward_ll"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/round_outline"
+                            android:backgroundTint="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.95"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+                        </LinearLayout>
+
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
