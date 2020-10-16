@@ -751,8 +751,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            app:cardCornerRadius="15dp"
             android:layout_marginBottom="10dp"
+            app:cardCornerRadius="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -779,6 +779,7 @@
                     app:layout_constraintVertical_bias="0" />
 
                 <LinearLayout
+                    android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -786,7 +787,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView24">
+                    app:layout_constraintTop_toBottomOf="@+id/textView24"
+                    app:layout_constraintVertical_bias="0">
 
                     <include
                         layout="@layout/debit_credit_card"
@@ -798,6 +800,92 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:id="@+id/separator"
+                    android:layout_marginHorizontal="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.00"
+                    >
+
+                </View>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/separator"
+                    app:layout_constraintVertical_bias="0.00">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp">
+
+                        <ImageView
+                            android:id="@+id/add_icon"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/ic_plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.045"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/add_new_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:text="ADD NEW CARD"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/add_icon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@id/add_icon"
+                            app:layout_constraintTop_toTopOf="@+id/add_icon">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_visa"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.95"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_mastercard"
+                            android:layout_marginRight="5dp"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
