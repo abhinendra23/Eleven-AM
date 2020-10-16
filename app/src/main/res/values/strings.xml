@@ -2,4 +2,5 @@
     <string name="app_name">ElevenAM</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="link_account"><u>LINK ACCOUNT</u></string>
 </resources>
